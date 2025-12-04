@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #5271ff;
+  --accent-dark: #365bff;
+
+  --background: #ececec;
+}
+
+html {
+  scrollbar-width: none;
+
+  body {
+    @apply min-h-screen bg-background bg-linear-to-b from-accent/20 via-transparent via-40% to-transparent bg-no-repeat text-neutral-600;
+  }
+}
+
+@theme {
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+
+  --color-background: var(--background);
+}
