@@ -35,7 +35,7 @@ function AddDeveloperForm({ onSubmit }) {
     "px-2 py-2 text-sm min-w-3xs bg-neutral-50 text-neutral-900 inset-shadow-sm inset-shadow-neutral-900/10 ring ring-neutral-300 focus:ring-neutral-700 outline-0 rounded-sm transition duration-300 ease-out";
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center px-4 py-4 bg-neutral-200/30 backdrop-blur-sm">
+    <div className="fixed inset-0 z-10 flex items-center justify-center px-4 py-4 bg-neutral-200/30 backdrop-blur-sm">
       <form
         onSubmit={handleSubmit(handleForm)}
         className="grid grid-cols-1 gap-6 rounded-lg bg-neutral-100 px-4 min-[23rem]:px-10 py-12 shadow-lg"

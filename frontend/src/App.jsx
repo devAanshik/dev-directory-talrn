@@ -45,11 +45,19 @@ function App() {
           setRoleFilter={setRoleFilter}
           setTechFilter={setTechFilter}
         />
-        {loading ? (
-          <p>Loading developers...</p>
-        ) : (
-          <DeveloperList developers={filteredDevelopers} />
-        )}
+
+        <section className="max-w-5xl mx-auto py-6 space-y-6 bg-neutral-50 rounded-xl shadow">
+          <h2 className="relative text-xl text-neutral-900 font-semibold px-4 sm:px-6">
+            <span className="absolute top-0 left-0 bg-accent w-1 rounded-r-full h-full"></span>
+            Developers
+          </h2>
+
+          {loading ? (
+            <p className="text-center px-4 sm:px-6">Loading...</p>
+          ) : (
+            <DeveloperList developers={filteredDevelopers} />
+          )}
+        </section>
       </main>
     </>
   );
